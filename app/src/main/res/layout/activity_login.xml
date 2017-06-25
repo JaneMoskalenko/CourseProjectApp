@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.admin.studentmanager.app.SignUpActivity">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        style="@style/tvSignUp"
+        android:layout_marginTop="20dp"
+        android:text="Логин"/>
+
+    <EditText
+        android:id="@+id/edtLogin"
+        style="@style/edtSignUp"
+        android:inputType="textPersonName"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/tvPassword"
+        style="@style/tvSignUp"
+        android:layout_marginTop="5dp"
+        android:text="Пароль"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        style="@style/edtSignUp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/btnSignUp"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorAccent"
+        android:text="@string/app_sign_up"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnReg"
+        style="@style/btnSignUp"
+        android:layout_marginTop="25dp"
+        android:text="@string/app_reg"/>
+
+
+</LinearLayout>
