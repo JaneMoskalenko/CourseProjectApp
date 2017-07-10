@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">CourseProject</string>
+    <string name="btn_makePhoto">Сфотографировать</string>
+    <string name="getTraslation">Получить текст</string>
+    <string name="getSound">Получить звук</string>
+
+
+    <string name="language_setup_title">Язык</string>
+    <string name="language_setup_summary">Выберите язык из списка</string>
+    <string name="allow_to_save_photos_setup_title">Сохранять фотографии</string>
+    <string name="allow_to_save_photos_setup_summary">Фотографии будут сохранены в памяти телефона</string>
+    <string name="voice_setup_female">Женский</string>
+    <string name="voice_setup_female_summary">Женский </string>
+    <string name="voice_setup_male_summary">Мужской </string>
+    <string name="voice_setup_male">Мужской</string>
+    <string name="voice_setup_female_title">Голос</string>
+    <string name="btn_settings">Настройки</string>
+    <string name="btn_playMP3">Воспроизвести MP3</string>
+    <string name="subscription_key_vision">5d037ac0906f49808a4da3d2f1a19d90</string>
+    <string-array name="setting_language_entry">
+        <item>Русский</item>
+        <item>Английский</item>
+    </string-array>
+    <string-array name="setting_language_values">
+        <item>RU</item>
+        <item>ENG</item>
+    </string-array>
+
 </resources>

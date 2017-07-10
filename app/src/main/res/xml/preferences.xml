@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:enabled="true"
+        android:key="save_photos_setup"
+        android:summary="@string/allow_to_save_photos_setup_summary"
+        android:title="@string/allow_to_save_photos_setup_title"
+        />
+
+    <SwitchPreference
+        android:key="voice_setup_female"
+        android:summary="Женский или мужской"
+        android:summaryOff="@string/voice_setup_male_summary"
+        android:summaryOn="@string/voice_setup_female_summary"
+        android:title="@string/voice_setup_female_title"
+        android:switchTextOff="@string/voice_setup_male"
+        android:switchTextOn="@string/voice_setup_female"
+        android:enabled="true"
+        android:disableDependentsState="true"/>
+
+    <ListPreference
+        android:entries="@array/setting_language_entry"
+        android:entryValues="@array/setting_language_values"
+        android:key="language_setup"
+        android:summary="@string/language_setup_summary"
+        android:title="@string/language_setup_title"
+        />
+</PreferenceScreen>
