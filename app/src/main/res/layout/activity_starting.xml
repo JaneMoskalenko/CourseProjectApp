@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/PictureSpeaker_start_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/starting_info"
+        android:textColor="@color/PictureSpeaker_colorAccentDark"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        style="@style/PictureSpeaker_start_tv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/starting_info_list1"/>
+
+    <Button
+        android:id="@+id/btn_start_makePhoto"
+        style="@style/PictureSpeaker_start_btn_makePhoto"
+        android:text="@string/btn_makePhoto"/>
+
+    <TextView
+        style="@style/PictureSpeaker_start_tv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/starting_info_list2"/>
+
+    <Button
+        android:id="@+id/btn_start_selectPhoto"
+        style="@style/PictureSpeaker_start_btn_selectPhoto"
+        android:text="@string/btn_selectPhoto"/>
+
+    <Button
+        android:id="@+id/btn_start_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Next"/>
+
+</LinearLayout>

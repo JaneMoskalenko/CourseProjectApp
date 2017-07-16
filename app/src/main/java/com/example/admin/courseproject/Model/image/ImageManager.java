@@ -8,10 +8,6 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by admin on 09.07.2017.
- */
-
 public class ImageManager {
 
     private File outputDir;

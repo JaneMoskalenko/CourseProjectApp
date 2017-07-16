@@ -1,9 +1,5 @@
 package com.example.admin.courseproject.Presenter.services.recognition;
 
-/**
- * Created by admin on 10.07.2017.
- */
-
 public class RecognizeResponse {
     private String description;
     private Double confidence;

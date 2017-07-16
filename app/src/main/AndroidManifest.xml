@@ -19,22 +19,16 @@
         android:supportsRtl="true"
         android:name=".Application"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.activity.StartActivity">
+        <activity android:name=".View.activity.StartingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".View.activity.PreparingActivity"/>
         <activity android:name=".View.activity.SettingsActivity"/>
-        <activity android:name=".View.activity.PlayingSoundActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <!--<data android:type="audio/*" />
-                <data android:type="application/ogg" />-->
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".View.activity.TranslateActivity"/>
     </application>
 
 </manifest>

@@ -25,7 +25,7 @@ public class RecognizeRequest extends AsyncTask<String, String, String> {
 
     private Exception mException = null;
     private Bitmap mBitmap;
-    private String resultMessage;
+    private String resultMessage ="";
     private VisionServiceClient client;
     private RecognizeCallback mRecognizeCallback;
     private RecognizeResponse recognizeResponse;
@@ -75,8 +75,8 @@ public class RecognizeRequest extends AsyncTask<String, String, String> {
     @Override
     protected void onPostExecute(String data) {
         super.onPostExecute(data);
+
         // Display based on error existence
-        resultMessage = "";
         if (mException != null) {
             resultMessage = "Error: " + mException.getMessage();
             Log.d(TAG, "Error encountered. Exception is: " + mException.getMessage());
@@ -87,10 +87,10 @@ public class RecognizeRequest extends AsyncTask<String, String, String> {
             Gson gson = new Gson();
             AnalysisResult result = gson.fromJson(data, AnalysisResult.class);
             resultMessage = parseResultDataFromJsonInDetail(data, result);
-            Log.d(TAG, "recognizeResponse is NULL");
+            Log.i(TAG, "recognize FULL" + resultMessage);
             recognizeResponse = parseResultDataFromJsonToResponce(data, result);
         }
-        mRecognizeCallback.onGetRequest(resultMessage);
+
         if (recognizeResponse != null) {
             mRecognizeCallback.onGetRequest(recognizeResponse);
         }
@@ -110,10 +110,8 @@ public class RecognizeRequest extends AsyncTask<String, String, String> {
     }
 
     /*TODO refactor shortResultMethod + separate description & confidence*/
-    /*TODO write to DB*/
     private String parseResultDataFromJsonInDetail(String data, AnalysisResult result) {
 
-        StringBuilder description = new StringBuilder();;
         StringBuilder  resultDetail = new StringBuilder();
 
         resultDetail.append("Image format: ").append(result.metadata.format).append("\n");
@@ -124,8 +122,6 @@ public class RecognizeRequest extends AsyncTask<String, String, String> {
         for (Caption caption: result.description.captions) {
             resultDetail.append("Caption: ").append(caption.text).append(", confidence: ")
                     .append(caption.confidence).append("\n");
-
-            description.append(caption.text);
         }
         resultDetail.append("\n");
 
@@ -136,13 +132,6 @@ public class RecognizeRequest extends AsyncTask<String, String, String> {
 
         resultDetail.append("\n--- Raw Data ---\n\n");
         resultDetail.append(data);
-
-        DBHelper dbHelper = DBHelper.getInstance();
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
-        ContentValues cv = new ContentValues();
-        cv.put("description", description.toString());
-        long rowID = db.insert("ImageDescription ", null, cv);
-        Log.i(TAG, "TO DB: "+ description.toString());
 
         return resultDetail.toString();
 

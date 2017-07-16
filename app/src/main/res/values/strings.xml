@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CourseProject</string>
+    <string name="app_name">Пикчер Говорикчер</string>
     <string name="btn_makePhoto">Сфотографировать</string>
     <string name="getTraslation">Получить текст</string>
     <string name="getSound">Получить звук</string>
@@ -17,6 +17,10 @@
     <string name="btn_settings">Настройки</string>
     <string name="btn_playMP3">Воспроизвести MP3</string>
     <string name="subscription_key_vision">5d037ac0906f49808a4da3d2f1a19d90</string>
+    <string name="btn_selectPhoto">Выбрать фото</string>
+    <string name="starting_info"> Для того, чтобы начать:</string>
+    <string name="starting_info_list1">- сделайте фотографию </string>
+    <string name="starting_info_list2">- или выберите ее из галереи</string>
     <string-array name="setting_language_entry">
         <item>Русский</item>
         <item>Английский</item>

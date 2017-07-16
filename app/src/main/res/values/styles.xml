@@ -8,4 +8,36 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="PictureSpeaker_start_tv">
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/PictureSpeaker_colorPrimary</item>
+    </style>
+
+    <style name="PictureSpeaker_start_tv_list" parent="PictureSpeaker_start_tv">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textColor">@color/PictureSpeaker_colorPrimary</item>
+    </style>
+
+
+    <style name="PictureSpeaker_start_btn_makePhoto">
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">230dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/PictureSpeaker_colorAccent</item>
+    </style>
+
+    <style name="PictureSpeaker_start_btn_selectPhoto"
+           parent="PictureSpeaker_start_btn_makePhoto">
+        <item name="android:layout_width">230dp</item>
+      <!--  <item name="android:layout_marginTop">40dp</item>-->
+    </style>
+
+
 </resources>
