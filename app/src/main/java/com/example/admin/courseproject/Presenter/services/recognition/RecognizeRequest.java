@@ -63,7 +63,6 @@ public class RecognizeRequest extends AsyncTask<String, String, String> {
 
     @Override
     protected String doInBackground(String... args) {
-        Log.d(TAG, "Start doing in Background");
         try {
             return process();
         } catch (Exception e) {

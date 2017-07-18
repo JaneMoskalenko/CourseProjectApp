@@ -50,7 +50,7 @@ public class StartActivity extends Activity implements RecognizeCallback{
        // btn_go_to_playsound = (Button) findViewById(R.id.btn_go_to_playsound);
         tv_description = (TextView) findViewById(R.id.tv_description);
         tv_confidence = (TextView) findViewById(R.id.tv_confidence);
-        mImageManager = new ImageManager();
+        mImageManager = new ImageManager(this);
 
         btn_makePhoto.setOnClickListener(new View.OnClickListener() {
             @Override

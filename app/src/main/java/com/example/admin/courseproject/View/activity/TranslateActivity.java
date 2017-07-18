@@ -50,12 +50,12 @@ public class TranslateActivity extends Activity implements TranslateCallback{
     }
 
     @Override
-    public void onGetRequest(String result) {
+    public void onGetTranslateResponse(String result) {
         tv_translate.setText(result);
     }
 
     @Override
-    public void onGetRequestException(String resultMessage) {
+    public void onGetTranslateResponseException(String resultMessage) {
         Toast.makeText(this, resultMessage, Toast.LENGTH_SHORT).show();
 
     }

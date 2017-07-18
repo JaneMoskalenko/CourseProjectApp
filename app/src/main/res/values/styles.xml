@@ -1,11 +1,19 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorForeground">@color/PictureSpeaker_colorAccentLight</item>
+        <item name="colorPrimary">@color/PictureSpeaker_colorAccent</item>
+        <item name="colorPrimaryDark">@color/PictureSpeaker_colorAccentDark</item>
+        <item name="colorAccent">@color/PictureSpeaker_colorPrimary</item>
+
+        <item name="android:windowTitleBackgroundStyle">@color/PictureSpeaker_colorAccent</item>
+
+      <!--  <item name="android:textColorPrimary">@color/PictureSpeaker_colorPrimary</item>
+        <item name="android:textColorSecondary">@color/PictureSpeaker_colorPrimary</item>-->
+
+
     </style>
 
     <style name="PictureSpeaker_start_tv">
@@ -37,6 +45,10 @@
            parent="PictureSpeaker_start_btn_makePhoto">
         <item name="android:layout_width">230dp</item>
       <!--  <item name="android:layout_marginTop">40dp</item>-->
+    </style>
+    
+    <style name="SwitchCompatVoiceType">
+        <item name="android:colorControlActivated">@color/PictureSpeaker_colorAccentDark</item>
     </style>
 
 

@@ -48,7 +48,7 @@ public class TranslateService {
             public void onResponse(Call<TranslateData> call, Response<TranslateData> response) {
                if ( response.isSuccessful() ){
                    data = response.body();
-                   mTranslateCallback.onGetRequest(data.getText());
+                   mTranslateCallback.onGetTranslateResponse(data.getText());
                    Log.d(TAG, data.getText());
                 }
             }
@@ -60,10 +60,10 @@ public class TranslateService {
 
                 if(call.isCanceled()) {
                     Log.e(TAG, "request was aborted");
-                    mTranslateCallback.onGetRequestException("request was aborted");
+                    mTranslateCallback.onGetTranslateResponseException("request was aborted");
                 }else {
                     Log.e(TAG, "Unable to submit post to API.");
-                    mTranslateCallback.onGetRequestException("Unable to submit post to API.");
+                    mTranslateCallback.onGetTranslateResponseException("Unable to submit post to API.");
                 }
             }
         });

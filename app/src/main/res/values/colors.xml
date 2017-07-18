@@ -9,4 +9,5 @@
     <color name="PictureSpeaker_colorAccentLight">#ffd149</color>
     <color name="PictureSpeaker_colorAccentDark">#c67100</color>
     <color name="PictureSpeaker_colorPrimary">#000000</color>
+    <color name="PictureSpeaker_colorGrey">#e0e0e0</color>
 </resources>

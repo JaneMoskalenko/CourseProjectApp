@@ -1,10 +1,10 @@
 <resources>
+    <!--General-->
     <string name="app_name">Пикчер Говорикчер</string>
-    <string name="btn_makePhoto">Сфотографировать</string>
     <string name="getTraslation">Получить текст</string>
     <string name="getSound">Получить звук</string>
 
-
+    <!--Settings-->
     <string name="language_setup_title">Язык</string>
     <string name="language_setup_summary">Выберите язык из списка</string>
     <string name="allow_to_save_photos_setup_title">Сохранять фотографии</string>
@@ -14,13 +14,7 @@
     <string name="voice_setup_male_summary">Мужской </string>
     <string name="voice_setup_male">Мужской</string>
     <string name="voice_setup_female_title">Голос</string>
-    <string name="btn_settings">Настройки</string>
-    <string name="btn_playMP3">Воспроизвести MP3</string>
-    <string name="subscription_key_vision">5d037ac0906f49808a4da3d2f1a19d90</string>
-    <string name="btn_selectPhoto">Выбрать фото</string>
-    <string name="starting_info"> Для того, чтобы начать:</string>
-    <string name="starting_info_list1">- сделайте фотографию </string>
-    <string name="starting_info_list2">- или выберите ее из галереи</string>
+    <string name="menu_settings">Настройки</string>
     <string-array name="setting_language_entry">
         <item>Русский</item>
         <item>Английский</item>
@@ -29,5 +23,28 @@
         <item>RU</item>
         <item>ENG</item>
     </string-array>
+
+    <string name="subscription_key_vision">5d037ac0906f49808a4da3d2f1a19d90</string>
+
+    <string name="btn_settings">Настройки</string>
+    <string name="btn_playMP3">Воспроизвести MP3</string>
+
+
+    <!--StartingActivity-->
+    <string name="starting_info"> Для того, чтобы начать:</string>
+    <string name="starting_info_list1">- сделайте фотографию </string>
+    <string name="starting_info_list2">- или выберите ее из галереи</string>
+    <string name="btn_makePhoto">Сфотографировать</string>
+    <string name="btn_selectPhoto">Выбрать фото</string>
+
+    <!--Error Message-->
+    <string name="noImageSelected">Изображение не выбрано</string>
+    <string name="imageCaptureCancelled">Действие отменено</string>
+    <string name="errorOccur">Действие отменено</string>
+    <string name="dialog_process_recognize">Идет анализ изображения</string>
+    <string name="dialog_process_translate">Идет перевод</string>
+    <string name="dialog_process_vocalize">Подготовка к озвучиванию</string>
+    <string name="btn_recognize">Распознать</string>
+
 
 </resources>
